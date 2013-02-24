@@ -7,10 +7,20 @@ namespace sf {
 	class Time;
 }
 
+namespace spine {
+	class Skeleton;
+	class Animation;
+}
+
 class Application
 {
 private:
 	sf::RenderTarget& _target;
+	spine::Skeleton* _skeleton;
+	spine::Animation* _animation;
+
+	void loadSkeleton();
+	void updateSkeleton(const sf::Time& dt);
 public:
 	Application(sf::RenderTarget& target);
 	~Application();

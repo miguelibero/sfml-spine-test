@@ -24,3 +24,6 @@ CTestTestfile.cmake
 Makefile
 /bin/
 cmake_install.cmake
+
+/proj.linux/bin
+/proj.linux/bin/*
