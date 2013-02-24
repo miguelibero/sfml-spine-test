@@ -1,10 +1,12 @@
 #include <SFML/Graphics.hpp>
+#include <SFML/System/Clock.hpp>
+#include "Application.hpp"
 
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
-    sf::CircleShape shape(100.f);
-    shape.setFillColor(sf::Color::Green);
+    sf::RenderWindow window(sf::VideoMode(500, 500), "SFML Spine test");
+    sf::Clock clock;
+    Application app(window);
 
     while (window.isOpen())
     {
@@ -16,7 +18,8 @@ int main()
         }
 
         window.clear();
-        window.draw(shape);
+        app.update(clock.getElapsedTime());
+        app.draw();
         window.display();
     }
 

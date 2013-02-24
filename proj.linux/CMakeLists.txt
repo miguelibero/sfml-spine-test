@@ -8,12 +8,20 @@ set( CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin )
 project(sfml-spine-test)
 
 set(LIB_DIR "${CMAKE_SOURCE_DIR}/../lib")
+set(SRC_DIR "${CMAKE_SOURCE_DIR}/../src")
 set(PLATFORM_SRC_DIR "${CMAKE_SOURCE_DIR}/src")
 
 set(EXECUTABLE_NAME "sfml_spine_test")
-add_executable (${EXECUTABLE_NAME} ${PLATFORM_SRC_DIR}/main.cpp)
 
-include_directories(${PLATFORM_SRC_DIR})
+file(GLOB_RECURSE MAIN_SOURCES
+    "${SRC_DIR}/*.cpp"
+)
+file(GLOB_RECURSE MAIN_PLATFORM_SOURCES
+    "${PLATFORM_SRC_DIR}/*.cpp"
+)
+add_executable (${EXECUTABLE_NAME} ${MAIN_SOURCES} ${MAIN_PLATFORM_SOURCES})
+
+include_directories(${SRC_DIR} ${PLATFORM_SRC_DIR})
 
 #sfml
 set(CMAKE_MODULE_PATH "${LIB_DIR}/sfml/cmake/Modules" ${CMAKE_MODULE_PATH})

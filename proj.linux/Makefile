@@ -532,6 +532,30 @@ home/mibero/Projects/sfml-spine-test/lib/spine/spine-cpp/src/spine/Slot.cpp.s:
 	$(MAKE) -f CMakeFiles/spine.dir/build.make CMakeFiles/spine.dir/home/mibero/Projects/sfml-spine-test/lib/spine/spine-cpp/src/spine/Slot.cpp.s
 .PHONY : home/mibero/Projects/sfml-spine-test/lib/spine/spine-cpp/src/spine/Slot.cpp.s
 
+home/mibero/Projects/sfml-spine-test/src/Application.o: home/mibero/Projects/sfml-spine-test/src/Application.cpp.o
+.PHONY : home/mibero/Projects/sfml-spine-test/src/Application.o
+
+# target to build an object file
+home/mibero/Projects/sfml-spine-test/src/Application.cpp.o:
+	$(MAKE) -f CMakeFiles/sfml_spine_test.dir/build.make CMakeFiles/sfml_spine_test.dir/home/mibero/Projects/sfml-spine-test/src/Application.cpp.o
+.PHONY : home/mibero/Projects/sfml-spine-test/src/Application.cpp.o
+
+home/mibero/Projects/sfml-spine-test/src/Application.i: home/mibero/Projects/sfml-spine-test/src/Application.cpp.i
+.PHONY : home/mibero/Projects/sfml-spine-test/src/Application.i
+
+# target to preprocess a source file
+home/mibero/Projects/sfml-spine-test/src/Application.cpp.i:
+	$(MAKE) -f CMakeFiles/sfml_spine_test.dir/build.make CMakeFiles/sfml_spine_test.dir/home/mibero/Projects/sfml-spine-test/src/Application.cpp.i
+.PHONY : home/mibero/Projects/sfml-spine-test/src/Application.cpp.i
+
+home/mibero/Projects/sfml-spine-test/src/Application.s: home/mibero/Projects/sfml-spine-test/src/Application.cpp.s
+.PHONY : home/mibero/Projects/sfml-spine-test/src/Application.s
+
+# target to generate assembly for a file
+home/mibero/Projects/sfml-spine-test/src/Application.cpp.s:
+	$(MAKE) -f CMakeFiles/sfml_spine_test.dir/build.make CMakeFiles/sfml_spine_test.dir/home/mibero/Projects/sfml-spine-test/src/Application.cpp.s
+.PHONY : home/mibero/Projects/sfml-spine-test/src/Application.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -617,6 +641,9 @@ help:
 	@echo "... home/mibero/Projects/sfml-spine-test/lib/spine/spine-cpp/src/spine/Slot.o"
 	@echo "... home/mibero/Projects/sfml-spine-test/lib/spine/spine-cpp/src/spine/Slot.i"
 	@echo "... home/mibero/Projects/sfml-spine-test/lib/spine/spine-cpp/src/spine/Slot.s"
+	@echo "... home/mibero/Projects/sfml-spine-test/src/Application.o"
+	@echo "... home/mibero/Projects/sfml-spine-test/src/Application.i"
+	@echo "... home/mibero/Projects/sfml-spine-test/src/Application.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

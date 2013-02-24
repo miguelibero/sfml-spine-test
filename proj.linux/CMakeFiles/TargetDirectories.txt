@@ -1,2 +1,0 @@
-/home/mibero/Projects/sfml-spine-test/proj.linux/CMakeFiles/sfml_spine_test.dir
-/home/mibero/Projects/sfml-spine-test/proj.linux/CMakeFiles/spine.dir
